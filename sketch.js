@@ -31,15 +31,15 @@ function setup(){
   
   leftArrow = createSprite(100, 373, 10, 10);
   leftArrow.addImage(leftImg);
-  leftArrow.scale = 0.6;
+  //leftArrow.scale = 0.6;
 
   rightArrow = createSprite(720, 373, 10, 10);
   rightArrow.addImage(rightImg);
-  rightArrow.scale = 0.6;
+  //rightArrow.scale = 0.6;
 
   upArrow = createSprite(170, 373, 10, 10);
   upArrow.addImage(upImg);
-  upArrow.scale = 0.6;
+  //upArrow.scale = 0.6;
 
   ground = createSprite(400, 340, 1000, 10);
   ground.shapeColor = "lightgreen";
@@ -98,7 +98,7 @@ function shoot(){
     b.velocityX = -7;
   }
 
-  if (keyDown("right") && keyDown("space") && mousePressedOver(rightArrow)){
+  if (keyDown("right") && keyDown("space") || mousePressedOver(rightArrow) && mousePressedOver(shootBtn)){
     b.velocityX = 7;
   }
 }
