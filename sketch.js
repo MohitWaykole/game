@@ -25,19 +25,19 @@ function setup(){
   engine = Engine.create();
   world = engine.world;
   
-  shootBtn = createSprite(640, 373, 100, 100);
+  shootBtn = createSprite(640, 373, 40, 40);
   shootBtn.addImage(btn);
   shootBtn.scale = 1.1;
   
-  leftArrow = createSprite(100, 373, 100, 100);
+  leftArrow = createSprite(100, 373, 40, 40);
   leftArrow.addImage(leftImg);
   //leftArrow.scale = 0.6;
 
-  rightArrow = createSprite(720, 373, 100, 100);
+  rightArrow = createSprite(720, 373, 40, 40);
   rightArrow.addImage(rightImg);
   //rightArrow.scale = 0.6;
 
-  upArrow = createSprite(170, 373, 100, 100);
+  upArrow = createSprite(170, 373, 40, 40);
   upArrow.addImage(upImg);
   //upArrow.scale = 0.6;
 
